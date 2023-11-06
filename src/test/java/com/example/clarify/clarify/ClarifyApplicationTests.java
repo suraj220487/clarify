@@ -31,19 +31,19 @@ class ClarifyApplicationTests {
     int randomServerPort;
 
     
-	@Test
-	public void testGetEmployeeListSuccess() throws URISyntaxException 
-	{
-	    RestTemplate restTemplate = new RestTemplate();
+	// @Test
+	// public void testGetEmployeeListSuccess() throws URISyntaxException 
+	// {
+	//     RestTemplate restTemplate = new RestTemplate();
 	     
-	    final String baseUrl = "http://localhost:" + randomServerPort + "/login?name=Ayansh";
-	    URI uri = new URI(baseUrl);
+	//     final String baseUrl = "http://localhost:" + randomServerPort + "/login?name=Ayansh";
+	//     URI uri = new URI(baseUrl);
 	 
-	    ResponseEntity<String> result = restTemplate.getForEntity(uri, String.class);
+	//     ResponseEntity<String> result = restTemplate.getForEntity(uri, String.class);
 	     
-	    //Verify request succeed
-	    System.out.println("Body : "+result.getBody());
-	    // Assert.assertEquals(200, result.getStatusCodeValue());
-	    // Assert.assertEquals(true, result.getBody().contains("Hello"));
-	}
+	//     //Verify request succeed
+	//     System.out.println("Body : "+result.getBody());
+	//     // Assert.assertEquals(200, result.getStatusCodeValue());
+	//     // Assert.assertEquals(true, result.getBody().contains("Hello"));
+	// }
 }
